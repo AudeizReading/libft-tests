@@ -10,9 +10,9 @@ For using this file, you need this arborescence:
 Like that, you don't need to change the path for including libft
 
 For using trying-libft:
-Go in the trying-libft directory and do:
+Go into the trying-libft directory and do:
 
- ```
+ ```Makefile
  make test
  ```
 It will compile the libft *(not bonus yet)* and launch the executable that testing
