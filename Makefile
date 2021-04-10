@@ -6,7 +6,7 @@
 #    By: alellouc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/03 20:33:29 by alellouc          #+#    #+#              #
-#    Updated: 2021/04/08 10:30:29 by alellouc         ###   ########.fr        #
+#    Updated: 2021/04/10 19:15:20 by alellouc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,8 +19,8 @@ FT=ft
 LIBFT_PATH=../$(LIBFT)
 CFLAGS=-Wall -Wextra -Werror
 LDFLAGS=-L $(LIBFT_PATH) -l$(FT)
-CHEADERS=-I $(LIBFT_PATH) 
-ALL_FLAGS= $(CHEADERS) $(CFLAGS)
+CHEADERS=-I .
+ALL_FLAGS=$(CHEADERS) $(CFLAGS)
 SRC=$(wildcard *.c)
 OBJ=$(SRC:.c=.o)
 NAME=test-libft
@@ -44,7 +44,7 @@ test: all
 	$(CC) -c $< $(ALL_FLAGS) -o $@
 
 clean:
-	$(RM) $(OBJ) $(BONUS_OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean
 	$(RM) $(NAME)

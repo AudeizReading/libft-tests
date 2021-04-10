@@ -6,16 +6,17 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/09 23:08:13 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/10 19:34:19 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
+/*#include "../libft/libft.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
-#include <ctype.h>
+#include <ctype.h>*/
+#include "test-libft.h"
 
 int		main(int argc, char **argv)
 {
@@ -714,110 +715,12 @@ int		main(int argc, char **argv)
 	free(ret17);
 
 	/* ft_split */
-	char	*s_split1 = "  tripouille 42  ";
-	int		sep_split1 = ' ';
-	char	**tab_split1 = ft_split(s_split1, sep_split1);
-	int		i = 0;
-	while (tab_split1[i])
-	{
-		printf("tab[%d]: %s, taille: %ld\n", i, tab_split1[i], strlen(tab_split1[i]));
-		i++;
-	}
-	if (tab_split1[i] == NULL)
-		printf("tab[%d] est bien initialise a NULL\n", i);
-	while (i >= 0)
-		free(tab_split1[i--]);
-	free(tab_split1);
-
-	char	*s_split2 = "tripouille";
-	int		sep_split2 = 0;
-	char	**tab_split2 = ft_split(s_split2, sep_split2);
-	i = 0;
-	while (tab_split2[i])
-	{
-		printf("tab[%d]: %s, taille: %ld\n", i, tab_split2[i], strlen(tab_split2[i]));
-		i++;
-	}
-	if (tab_split2[i] == NULL)
-		printf("tab[%d] est bien initialise a NULL\n", i);
-	while (i >= 0)
-		free(tab_split2[i--]);
-	free(tab_split2);
-
-	char	*s_split3 = "      ";
-	int		sep_split3 = ' ';
-	char	**tab_split3 = ft_split(s_split3, sep_split3);
-	i = 0;
-	while (tab_split3[i])
-	{
-		printf("tab[%d]: %s, taille: %ld\n", i, tab_split3[i], strlen(tab_split3[i]));
-		i++;
-	}
-	if (tab_split3[i] == NULL)
-		printf("tab[%d] est bien initialise a NULL\n", i);
-	while (i >= 0)
-		free(tab_split3[i--]);
-	free(tab_split3);
-
-	char	*s_split4 = "      ";
-	int		sep_split4 = ' ';
-	char	**tab_split4 = ft_split(s_split4, sep_split4);
-	i = 0;
-	while (tab_split4[i])
-	{
-		printf("tab[%d]: %s, taille: %ld\n", i, tab_split4[i], strlen(tab_split4[i]));
-		i++;
-	}
-	if (tab_split4[i] == NULL)
-		printf("tab[%d] est bien initialise a NULL\n", i);
-	while (i >= 0)
-		free(tab_split4[i--]);
-	free(tab_split4);
-
-	char	*s_split5 = 0;
-	int		sep_split5 = 0;
-	char	**tab_split5 = ft_split(s_split5, sep_split5);
-	i = 0;
-	while (tab_split5[i])
-	{
-		printf("tab[%d]: %s, taille: %ld\n", i, tab_split5[i], strlen(tab_split5[i]));
-		i++;
-	}
-	if (tab_split5[i] == NULL)
-		printf("tab[%d] est bien initialise a NULL\n", i);
-	while (i >= 0)
-		free(tab_split5[i--]);
-	free(tab_split5);
-
-	char	*s_split6 = "chinimala";
-	int		sep_split6 = ' ';
-	char	**tab_split6 = ft_split(s_split6, sep_split6);
-	i = 0;
-	while (tab_split6[i])
-	{
-		printf("tab[%d]: %s, taille: %ld\n", i, tab_split6[i], strlen(tab_split6[i]));
-		i++;
-	}
-	if (tab_split6[i] == NULL)
-		printf("tab[%d] est bien initialise a NULL\n", i);
-	while (i >= 0)
-		free(tab_split6[i--]);
-	free(tab_split6);
-
-	char	*s_split7 = "";
-	int		sep_split7 = 0;
-	printf("Nb mots trouves: %d\n", ft_cntwds(s_split7, (char)sep_split7));
-	char	**tab_split7 = ft_split(s_split7, sep_split7);
-	i = 0;
-	while (tab_split7[i])
-	{
-		printf("tab[%d]: %s, taille: %ld\n", i, tab_split7[i], strlen(tab_split7[i]));
-		i++;
-	}
-	if (tab_split7[i] == NULL)
-		printf("tab[%d] est bien initialise a NULL\n", i);
-	while (i >= 0)
-		free(tab_split7[i--]);
-	free(tab_split7);
+	test_ftsplit(" tripouille 42 ", ' ');
+	test_ftsplit("tripouille", 0);
+	test_ftsplit("         ", ' ');
+	/* SEGFAULT SI STR = NULL
+	test_ftsplit(0, 0);*/
+	test_ftsplit("chinimala", ' ');
+	test_ftsplit("", 0);
 	return (0);
 }
