@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/12 16:00:39 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/12 20:06:00 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -521,5 +521,12 @@ int		main(int argc, char **argv)
 
 	/* ft_split */
 	eval_ftsplit();
+	char **tab = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultricies diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.", 'i');
+	int i = 0;
+	while (tab[i])
+		printf("%s\n", tab[i++]);
+	while (i >= 0)
+		free(tab[i--]);
+	free(tab);
 	return (0);
 }
