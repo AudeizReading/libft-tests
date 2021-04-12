@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/10 19:34:19 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/12 16:00:39 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -269,59 +269,7 @@ int		main(int argc, char **argv)
 	}
 
 	/* ft_atoi */
-
-	if (ft_atoi("-2147483648") != atoi("-2147483648"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("-2147483648"));
-		printf("atoi:\t%d\n", atoi("2147483647"));
-	}
-	else if (ft_atoi("2147483647") != atoi("2147483647"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("2147483647"));
-		printf("atoi:\t%d\n", atoi("2147483647"));
-	}
-	else if (ft_atoi("+2147483647") != atoi("+2147483647"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("+2147483647"));
-		printf("atoi:\t%d\n", atoi("+2147483647"));
-	}
-	else if (ft_atoi("----2147483648") != atoi("----2147483648"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("----2147483648"));
-		printf("atoi:\t%d\n", atoi("----2147483648"));
-	}
-	else if (ft_atoi("+++2147483647") != atoi("+++2147483647"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("+++2147483647"));
-		printf("atoi:\t%d\n", atoi("+++2147483647"));
-	}
-	else if (ft_atoi("+-++--2147483647") != atoi("+-++--2147483647"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("+-++--2147483647"));
-		printf("atoi:\t%d\n", atoi("+-++--2147483647"));
-	}
-	else if (ft_atoi("-2147483649") != atoi("-2147483649"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("-2147483649"));
-		printf("atoi:\t%d\n", atoi("-2147483649"));
-	}
-	else if (ft_atoi("2147483648") != atoi("2147483648"))
-	{
-		printf("FAILED: ft_atoi\n");
-		printf("ft_atoi:\t%d\n", ft_atoi("2147483648"));
-		printf("atoi:\t%d\n", atoi("2147483648"));
-	}
-	else
-	{
-		printf("SUCCESS: ft_atoi\n");
-	}
+	eval_ftatoi();
 
 	/* ft_strdup */
 	char	*dest_ftstrdup;
@@ -560,167 +508,18 @@ int		main(int argc, char **argv)
 
 	/* ft_substr */
 	printf("ft_substr: %s\n", ft_substr("tripouille", 0, 42000));
+	printf("ft_substr: %s\n", ft_substr("forty-two", 0, 0));
+	printf("ft_substr: %s\n", ft_substr("forty-two", 5, 0));
+	printf("ft_substr: %s\n", ft_substr("forty-two", -1, 20));
+	printf("ft_substr: %s\n", ft_substr(NULL, 0, 20));
 	printf("ft_substr: %s\n", ft_substr("tripouille", 1, 1));
 	printf("ft_substr: %s\n", ft_substr("tripouille", 100, 1));
 	printf("ft_substr: %s\n", ft_substr("1", 42, 42000000));
 
 	/* ft_strtrim */
-	char	*s_trim1 = "*-***-Salut*-*ca*-*va*-*?";
-	char	*set_trim1 = "*-*";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim1, set_trim1));
-	printf("\ts_trim: %s\tset: %s\n", s_trim1, set_trim1);
-
-	char	*s_trim2 = "Salutca*-*va?";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim2, set_trim1));
-	printf("\ts_trim: %s\tset: %s\n", s_trim2, set_trim1);
-
-	char	*s_trim3 = "Salut*-*ca*-*va*-*?";
-	char	*set_trim3 = "-";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim3, set_trim3));
-	printf("\ts_trim: %s\tset: %s\n", s_trim3, set_trim3);
-
-	char	*s_trim4 = "Salut*-*ca*-*va*-*?";
-	char	*set_trim4 = "";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim4, set_trim4));
-	printf("\ts_trim: %s\tset: %s\n", s_trim4, set_trim4);
-
-	char	*s_trim5 = "$$$xxxtripouille";
-	char	*set_trim5 = "$x";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim5, set_trim5));
-	printf("\ts_trim: %s\tset: %s\n", s_trim5, set_trim5);
-
-	char	*s_trim6 = "tripouille   xxx";
-	char	*set_trim6 = " x";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim6, set_trim6));
-	printf("\ts_trim: %s\tset: %s\n", s_trim6, set_trim6);
-
-	char	*s_trim7 = "   xxxtripouille   xxx";
-	char	*set_trim7 = " x";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim7, set_trim7));
-	printf("\ts_trim: %s\tset: %s\n", s_trim7, set_trim7);
-
-	char	*s_trim8 = "$$$xxx$$$xxx";
-	char	*set_trim8 = "$x";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim8, set_trim8));
-	printf("\ts_trim: %s\tset: %s\n", s_trim8, set_trim8);
-
-	char	*s_trim9 = "";
-	char	*set_trim9 = "123";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim9, set_trim9));
-	printf("\ts_trim: %s\tset: %s\n", s_trim9, set_trim9);
-
-	char	*s_trim10 = "123";
-	char	*set_trim10 = "";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim10, set_trim10));
-	printf("\ts_trim: %s\tset: %s\n", s_trim10, set_trim10);
-
-	char	*s_trim11 = "";
-	char	*set_trim11 = "";
-	printf("ft_strtrim: %s\n", ft_strtrim(s_trim11, set_trim11));
-	printf("\ts_trim: %s\tset: %s\n", s_trim11, set_trim11);
-
-	/* tests lelievr */
-	char *s_trim12 = "$$$\t$$\n\n$\t\t$$\n\n\nHello$\t$$Please\n$Trim$me$!\n$$$\n$\n$\t\t\n$$";
-	char *s_returnattempted_trim12 = "Hello$\t$$Please\n$Trim$me$!";
-	char *ret12 = ft_strtrim(s_trim12, "$\n\t");
-
-	if (!strcmp(ret12, s_returnattempted_trim12))
-		printf("ft_strim (alelievr): SUCCESS\n");
-	else
-	{
-		printf("ft_strim (alelievr): FAILED\n");
-		printf("ft_strtrim: size %ld\t%s\n", strlen(ret12), ret12);
-		printf("Attempted return: size %ld\t%s\n", strlen(s_returnattempted_trim12), s_returnattempted_trim12);
-	}
-	free(ret12);
-
-	char *s_trim13 = "$$$\t$$\n\n$\t\t$$\n\n\nHello$\t$$Please\n$Trim$me$!";
-	char *s_returnattempted_trim13 = "Hello$\t$$Please\n$Trim$me$!";
-	char *ret13 = ft_strtrim(s_trim13, "$\n\t");
-
-	if (!strcmp(ret13, s_returnattempted_trim13))
-		printf("ft_strim (alelievr): SUCCESS\n");
-	else
-	{
-		printf("ft_strim (alelievr): FAILED\n");
-		printf("ft_strtrim: size %ld\t%s\n", strlen(ret13), ret13);
-		printf("Attempted return: size %ld\t%s\n", strlen(s_returnattempted_trim13), s_returnattempted_trim13);
-	}
-	free(ret13);
-
-	char *s_trim14 = "Hello$\t$$Please\n$Trim$me$!";
-	char *s_returnattempted_trim14 = "Hello$\t$$Please\n$Trim$me$!";
-	char *ret14 = ft_strtrim(s_trim14, "$\n\t");
-
-	if (!strcmp(ret14, s_returnattempted_trim14))
-		printf("ft_strim (alelievr): \033[1m\033[32mSUCCESS\033[0m\n");
-	else
-	{
-		printf("ft_strim (alelievr): FAILED\n");
-		printf("ft_strtrim: size %ld\t%s\n", strlen(ret14), ret14);
-		printf("Attempted return: size %ld\t%s\n", strlen(s_returnattempted_trim14), s_returnattempted_trim14);
-
-	}
-	free(ret14);
-
-	char *s_trim15 = "\t$$$\n\n\n$$\n\n\t$$$$Hello$\t$$Please\n$Trim$me$!\t\t\t\n$$\t\t\t\t$$";
-	char *s_returnattempted_trim15 = "Hello$\t$$Please\n$Trim$me$!";
-	char	*ret15 = ft_strtrim(s_trim15, "$\n\t");
-	/*int r_size = strlen(s_returnattempted_trim15);
-	int size;
-
-	size = get_last_malloc_size();
-	if (size == r_size + 1)
-		exit(TEST_SUCCESS);
-	exit(TEST_KO);*/
-
-	if (!strcmp(ret15, s_returnattempted_trim15))
-		printf("ft_strim (alelievr): SUCCESS\n");
-	else
-	{
-		printf("ft_strim (alelievr): FAILED\n");
-		printf("ft_strtrim: size %ld\t%s\n", strlen(ret15), ret15);
-		printf("Attempted return: size %ld\t%s\n", strlen(s_returnattempted_trim15), s_returnattempted_trim15);
-	}
-	free(ret15);
-
-	char *s_trim16 = "$$$\t$$\n\n$\t\t$$\n\n\nHello$\t$$Please\n$Trim$me$!\n$$$\n$\n$\t\t\n$$";
-	char *s_returnattempted_trim16 = "Hello$\t$$Please\n$Trim$me$!";
-	char *ret16 = ft_strtrim(s_trim16, "$\n\t");
-
-	if (!strcmp(ret16, s_returnattempted_trim16))
-		printf("ft_strim (alelievr): SUCCESS\n");
-	else
-	{
-		printf("ft_strim (alelievr): FAILED\n");
-		printf("ft_strtrim: size %ld\t%s\n", strlen(ret16), ret16);
-		printf("Attempted return: size %ld\t%s\n", strlen(s_returnattempted_trim16), s_returnattempted_trim16);
-
-	}
-	free(ret16);
-
-	char *s_trim17 = "$$$\t$$\n\n$\t\t$$\n\n\nHello$\t$$Please\n$Trim$me$!\n$$$\n$\n$\t\t\n$$";
-	char *s_returnattempted_trim17 = "Hello$\t$$Please\n$Trim$me$!";
-
-	char *ret17 = ft_strtrim(s_trim17, "$\n\t");
-	if (!strcmp(ret17, s_returnattempted_trim17))
-		printf("ft_strim (alelievr): SUCCESS\n");
-	else
-	{
-		printf("ft_strim (alelievr): FAILED\n");
-		printf("ft_strtrim: size %ld\t%s\n", strlen(ret17), ret17);
-		printf("Attempted return: size %ld\t%s\n", strlen(s_returnattempted_trim17), s_returnattempted_trim17);
-
-	}
-	free(ret17);
+	eval_ftstrtrim();
 
 	/* ft_split */
-	test_ftsplit(" tripouille 42 ", ' ');
-	test_ftsplit("tripouille", 0);
-	test_ftsplit("         ", ' ');
-	/* SEGFAULT SI STR = NULL
-	test_ftsplit(0, 0);*/
-	test_ftsplit("chinimala", ' ');
-	test_ftsplit("", 0);
+	eval_ftsplit();
 	return (0);
 }
