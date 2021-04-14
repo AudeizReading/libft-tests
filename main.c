@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 12:26:24 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 14:14:08 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -250,120 +250,7 @@ int		main(int argc, char **argv)
 	printf("ft_strrchr:\t%s\tstrrchr:\t%s\n", ft_strrchr(s_rchr1, '\0'), strrchr(s_rchr1, '\0'));
 	 
 	/* ft_strnstr */
-	/*char *s_nstr1 = "see FF your FF return FF now FF";
-	char *s_nstr2 = "FF";
-	size_t max1 = strlen(s_nstr1);
-	char *i1 = ft_strnstr(s_nstr1, s_nstr2, max1);
-	char *i2 = strnstr(s_nstr1, s_nstr2, max1);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i1, i2);
-	if (i1 == i2)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i1: %p\ti2: %p\n", i1, i2);
-
-	char *s_nstr3 = "FF";
-	char *s_nstr4 = "see F your F return F now F";
-	size_t max2 = strlen(s_nstr4);
-	char *i3 = strnstr(s_nstr3, s_nstr4, max2 );
-	char *i4 = ft_strnstr(s_nstr3, s_nstr4, max2 );
-	printf("\nstrnstr: %s\n", i3);
-	printf("\nft_strnstr: %s\n", i4);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i3, i4);
-	if (i3 == i4)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i3: %p\ti4: %p\n", i3, i4);
-
-	char *s_nstr5 = "MZIRIBMZIRIBMZE123";
-	char *s_nstr6 = "MZIRIBMZE";
-	size_t max3 = strlen(s_nstr6);
-	char *i5 = strnstr(s_nstr5, s_nstr6, max3);
-	char *i6 = ft_strnstr(s_nstr5, s_nstr6, max3);
-	printf("\nstrnstr: %s\n", i5);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i5, i6);
-	if (i5 == i6)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i5: %p\ti6: %p\n", i5, i6);
-
-	char *big1 = "abcdef";
-	char *little1 = "abcdefghijklmnop";
-	size_t max4 = strlen(big1);
-	char *i7 = strnstr(big1, little1, max4);
-	char *i8 = ft_strnstr(big1, little1, max4);
-
-	printf("\nstrnstr: %s\n", i7);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i7, i8);
-	if (i7 == i8)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i7: %p\ti8: %p\n", i7, i8);
-
-	char * big2 = "123456789";
-	char * little2 = "9";
-	size_t max5 = 8;
-	char *i9 = strnstr(big2, little2, max5);
-	char *i10 = ft_strnstr(big2, little2, max5);
-	printf("\nstrnstr: %s\n", i9);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i9, i10);
-	if (i9 == i10)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i9: %p\ti10: %p\n", i9, i10);
-
-	char *s_nstr7 = "FF";
-	char *s_nstr8 = "see FF your FF return FF now FF";
-	char *i11 = strnstr(s_nstr7, s_nstr8, 4);
-	char *i12 = ft_strnstr(s_nstr7, s_nstr8, 4);
-
-	printf("\nstrnstr: %s\n", i11);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i11, i12);
-	if (i11 == i12)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i11: %p\ti12: %p\n", i11, i12);
-
-	char *s_nstr9 = "";
-	char *s_nstr10 = "oh no not the empty string !";
-	size_t max6 = strlen(s_nstr10);
-	char *i13 = strnstr(s_nstr9, s_nstr10, max6);
-	char *i14 = ft_strnstr(s_nstr9, s_nstr10, max6);
-
-	printf("\nstrnstr: %s\n", i13);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i13, i14);
-	if (i13 == i14)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i13: %p\ti14: %p\n", i13, i14);
-
-	char *s_nstr11 = "AAAAAAAAAAAAA";
-	size_t max7 = strlen(s_nstr11);
-	char *i15 = strnstr(s_nstr11, s_nstr11, max7);
-	char *i16 = ft_strnstr(s_nstr11, s_nstr11, max7);
-
-	printf("\nstrnstr: %s\n", i15);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i15, i16);
-	if (i15 == i16)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i15: %p\ti16: %p\n", i15, i16);
-
-	char *s_nstr12 = "A";
-	char *i17 = strnstr(s_nstr12, s_nstr12, 2);
-	char *i18 = ft_strnstr(s_nstr12, s_nstr12, 2);
-
-	printf("\nstrnstr: %s\n", i17);
-	printf("ft_strnstr: %s\nstrnstr: %s\n", i17, i18);
-	if (i17 == i18)
-		printf("ft_strnstr: Test OK");
-	else
-		printf("i17: %p\ti18: %p\n", i17, i18);
-
-	printf("%s\n", ft_strnstr(((void *)0), "fake", 3));
-	printf("%s\n", strnstr(((void *)0), "fake", 3));
-	printf("strnstr: %s\n", strnstr("aaabcabcd", "abcd", 9));
-	printf("ft_strnstr: %s\n", ft_strnstr("aaabcabcd", "abcd", 9));*/
-	/* fin ft_strnstr */
+	eval_ftstrnstr();
 
 	/* ft_itoa */
 	printf("ft_itoa: %s\n", ft_itoa(25));

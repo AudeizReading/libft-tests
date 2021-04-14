@@ -30,5 +30,6 @@ That's all folks for the moment.
 	* ft_tolower
 	* ft_toupper
 	* ft_atoi
+	* ft_strnstr
 	* ft_strtrim
 	* ft_split
