@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 18:04:52 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:31:55 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,21 +84,9 @@ int		main(int argc, char **argv)
 	/* ft_calloc */
 	eval_ftcalloc();
 	/* ft_memset */
+	eval_ftmemset();
 	char	dest_ftmemset[250] = "Oyé sapapya, ca vous dirait un icecream avec mon ami et moi ?";
 	char	dest_memset[250] = "Oyé sapapya, ca vous dirait un icecream avec mon ami et moi ?";
-	ft_memset(dest_ftmemset, '$', 5);
-	memset(dest_memset, '$', 5);
-	if (strcmp(dest_ftmemset, dest_memset) != 0)
-	{
-		printf("FAILED: ft_memset\n");
-		printf("ft_memset: \t%s\n", dest_ftmemset);
-		printf("memset: \t%s\n", dest_memset);
-	}
-	else
-	{
-		printf("SUCCESS: ft_memset\n");
-	}
-
 	/* ft_bzero */
 	ft_bzero(dest_ftmemset, 10);
 	bzero(dest_memset, 10);
