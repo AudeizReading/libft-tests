@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/12 20:06:00 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 10:15:30 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,23 +52,7 @@ int		main(int argc, char **argv)
 		ft_putchar_fd('\n', 1);
 
 		/* ft_isalpha */
-		if (!isalpha('A') && ft_isalpha('A') != isalpha('A'))
-		{
-			printf("FAILED: ft_isalpha\n");
-			printf("ft_isalpha: \t%d\n", ft_isalpha('A'));
-			printf("isalpha: \t%d\n", isalpha('A'));
-		}
-		else if (!isalpha('0') && ft_isalpha('0') != isalpha('0'))
-		{
-			printf("FAILED: ft_isalpha\n");
-			printf("ft_isalpha: \t%d\n", ft_isalpha('0'));
-			printf("isalpha: \t%d\n", isalpha('0'));
-		}
-		else
-		{
-			printf("SUCCESS: ft_isalpha\n");
-		}
-
+		eval_ftisalpha();
 		/* ft_tolower */
 		if (!tolower('A') && ft_tolower('A') != tolower('A'))
 		{
@@ -106,72 +90,16 @@ int		main(int argc, char **argv)
 		}
 
 		/* ft_isdigit */
-		if (!isdigit('A') && ft_isdigit('A') != isdigit('A'))
-		{
-			printf("FAILED: ft_isdigit\n");
-			printf("ft_isdigit: \t%d\n", ft_isdigit('A'));
-			printf("isdigit: \t%d\n", isdigit('A'));
-		}
-		else if (!isdigit('0') && ft_isdigit('0') != isdigit('0'))
-		{
-			printf("FAILED: ft_isdigit\n");
-			printf("ft_isdigit: \t%d\n", ft_isdigit('0'));
-			printf("isdigit: \t%d\n", isdigit('0'));
-		}
-		else
-		{
-			printf("SUCCESS: ft_isdigit\n");
-		}
+		eval_ftisdigit();
 
 		/* ft_isalnum */
-		if (!isalnum('A') && ft_isalnum('A') != isalnum('A'))
-		{
-			printf("FAILED: ft_isalnum\n");
-			printf("ft_isalnum: \t%d\n", ft_isalnum('A'));
-			printf("isalnum: \t%d\n", isalnum('A'));
-		}
-		else if (!isalnum('0') && ft_isalnum('0') != isalnum('0'))
-		{
-			printf("FAILED: ft_isalnum\n");
-			printf("ft_isalnum: \t%d\n", ft_isalnum('0'));
-			printf("isalnum: \t%d\n", isalnum('0'));
-		}
-		else if (!isalnum('\n') && ft_isalnum('\n') != isalnum('\n'))
-		{
-			printf("FAILED: ft_isalnum\n");
-			printf("ft_isalnum: \t%d\n", ft_isalnum('\n'));
-			printf("isalnum: \t%d\n", isalnum('\n'));
-		}
-		else
-		{
-			printf("SUCCESS: ft_isalnum\n");
-		}
+		eval_ftisalnum();
 		
 		/* ft_isascii */
-		if (!isascii('A') && ft_isascii('A') != isascii('A'))
-		{
-			printf("FAILED: ft_isascii\n");
-			printf("ft_isascii: \t%d\n", ft_isascii('A'));
-			printf("isascii: \t%d\n", isascii('A'));
-		}
-		else if (!isascii('0') && ft_isascii('0') != isascii('0'))
-		{
-			printf("FAILED: ft_isascii\n");
-			printf("ft_isascii: \t%d\n", ft_isascii('0'));
-			printf("isascii: \t%d\n", isascii('0'));
-		}
-		else if (!isascii(128) && ft_isascii(128) != isascii(128))
-		{
-			printf("FAILED: ft_isascii\n");
-			printf("ft_isascii: \t%d\n", ft_isascii('\n'));
-			printf("isascii: \t%d\n", isascii('\n'));
-		}
-		else
-		{
-			printf("SUCCESS: ft_isascii\n");
-		}
+		eval_ftisascii();
 		/* ft_isprint */
-		if (!isprint('A') && ft_isprint('A') != isprint('A'))
+		eval_ftisprint();
+	/*	if (!isprint('A') && ft_isprint('A') != isprint('A'))
 		{
 			printf("FAILED: ft_isprint\n");
 			printf("ft_isprint: \t%d\n", ft_isprint('A'));
@@ -198,7 +126,7 @@ int		main(int argc, char **argv)
 		else
 		{
 			printf("SUCCESS: ft_isprint\n");
-		}
+		}*/
 
 		/* ft_strlen */
 		if (ft_strlen("Alleluiah!") != strlen("Alleluiah!"))

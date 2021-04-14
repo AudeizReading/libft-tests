@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/10 18:45:32 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/12 15:51:38 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 10:13:29 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,19 @@
 int		test_ftsplit(char *str, int sep);
 int		test_ftstrtrim(char *str, char *sep, char *expected);
 int		test_ftatoi(char *nstr);
+int		test_ftisalpha(int c);
+int		test_ftisalnum(int c);
+int		test_ftisascii(int c);
+int		test_ftisdigit(int c);
+int		test_ftisascii(int c);
+int		test_ftisprint(int c);
 void	eval_ftsplit(void);
 void	eval_ftstrtrim(void);
 void	eval_ftatoi(void);
+void	eval_ftisalpha(void);
+void	eval_ftisalnum(void);
+void	eval_ftisdigit(void);
+void	eval_ftisascii(void);
+void	eval_ftisprint(void);
 void	eval_test(char *f_name, int ret_test);
 #endif
