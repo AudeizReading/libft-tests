@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 10:22:10 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/12 10:29:46 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 11:47:46 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	eval_ftsplit(void)
 		&& test_ftsplit("_F_O_R_T_Y_T_W_O_", '_')\
 		&& test_ftsplit("_FOR_TYTWO_", '_')\
 		&& test_ftsplit("_FORTY-TWO", '_')\
-		&& test_ftsplit("FORTY-TWO_", '_');
+		&& test_ftsplit("FORTY-TWO_", '_')\
+		&& test_ftsplit("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultricies diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.", 'i');
 	eval_test("ft_split", ret);
 }

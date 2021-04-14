@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/10 18:45:32 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 10:13:29 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 11:12:38 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ int		test_ftisascii(int c);
 int		test_ftisdigit(int c);
 int		test_ftisascii(int c);
 int		test_ftisprint(int c);
+int		test_fttolower(int c);
+int		test_fttoupper(int c);
 void	eval_ftsplit(void);
 void	eval_ftstrtrim(void);
 void	eval_ftatoi(void);
@@ -51,5 +53,7 @@ void	eval_ftisalnum(void);
 void	eval_ftisdigit(void);
 void	eval_ftisascii(void);
 void	eval_ftisprint(void);
+void	eval_fttolower(void);
+void	eval_fttoupper(void);
 void	eval_test(char *f_name, int ret_test);
 #endif

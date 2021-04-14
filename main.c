@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 10:15:30 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 11:48:20 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,40 +54,10 @@ int		main(int argc, char **argv)
 		/* ft_isalpha */
 		eval_ftisalpha();
 		/* ft_tolower */
-		if (!tolower('A') && ft_tolower('A') != tolower('A'))
-		{
-			printf("FAILED: ft_tolower\n");
-			printf("ft_tolower: \t%d\n", ft_tolower('A'));
-			printf("tolower: \t%d\n", tolower('A'));
-		}
-		else if (!tolower('a') && ft_tolower('a') != tolower('a'))
-		{
-			printf("FAILED: ft_tolower\n");
-			printf("ft_tolower: \t%d\n", ft_tolower('a'));
-			printf("tolower: \t%d\n", tolower('a'));
-		}
-		else
-		{
-			printf("SUCCESS: ft_tolower\n");
-		}
+		eval_fttolower();
 
 		/* ft_toupper */
-		if (!tolower('a') && ft_toupper('a') != toupper('a'))
-		{
-			printf("FAILED: ft_toupper\n");
-			printf("ft_toupper: \t%d\n", ft_toupper('a'));
-			printf("toupper: \t%d\n", toupper('a'));
-		}
-		else if (!tolower('A') && ft_toupper('A') != toupper('A'))
-		{
-			printf("FAILED: ft_toupper\n");
-			printf("ft_toupper: \t%d\n", ft_toupper('A'));
-			printf("toupper: \t%d\n", toupper('A'));
-		}
-		else
-		{
-			printf("SUCCESS: ft_toupper\n");
-		}
+		eval_fttoupper();
 
 		/* ft_isdigit */
 		eval_ftisdigit();
@@ -98,35 +68,6 @@ int		main(int argc, char **argv)
 		/* ft_isascii */
 		eval_ftisascii();
 		/* ft_isprint */
-		eval_ftisprint();
-	/*	if (!isprint('A') && ft_isprint('A') != isprint('A'))
-		{
-			printf("FAILED: ft_isprint\n");
-			printf("ft_isprint: \t%d\n", ft_isprint('A'));
-			printf("isprint: \t%d\n", isprint('A'));
-		}
-		else if (!isprint('0') && ft_isprint('0') != isprint('0'))
-		{
-			printf("FAILED: ft_isprint\n");
-			printf("ft_isprint: \t%d\n", ft_isprint('0'));
-			printf("isprint: \t%d\n", isprint('0'));
-		}
-		else if (!isprint(128) && ft_isprint(128) != isprint(128))
-		{
-			printf("FAILED: ft_isprint\n");
-			printf("ft_isprint: \t%d\n", ft_isprint(128));
-			printf("isprint: \t%d\n", isprint(128));
-		}
-		else if (!isprint('\n') && ft_isprint('\n') != isprint('\n'))
-		{
-			printf("FAILED: ft_isprint\n");
-			printf("ft_isprint: \t%d\n", ft_isprint('\n'));
-			printf("isprint: \t%d\n", isprint('\n'));
-		}
-		else
-		{
-			printf("SUCCESS: ft_isprint\n");
-		}*/
 
 		/* ft_strlen */
 		if (ft_strlen("Alleluiah!") != strlen("Alleluiah!"))
@@ -449,12 +390,5 @@ int		main(int argc, char **argv)
 
 	/* ft_split */
 	eval_ftsplit();
-	char **tab = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultricies diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.", 'i');
-	int i = 0;
-	while (tab[i])
-		printf("%s\n", tab[i++]);
-	while (i >= 0)
-		free(tab[i--]);
-	free(tab);
 	return (0);
 }
