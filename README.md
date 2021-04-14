@@ -40,5 +40,6 @@ tests
 	* ft_strnstr
 	* ft_strncmp
 	* ft_strdup
+	* ft_calloc
 	* ft_strtrim
 	* ft_split

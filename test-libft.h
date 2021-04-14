@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/10 18:45:32 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 15:48:43 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 17:53:26 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ int		test_ftstrlen(char *s);
 int		test_ftstrnstr(char *haystack, char *needle, size_t len, char *expected);
 int		test_ftstrncmp(char *s1, char *s2, size_t len);
 int		test_ftstrdup(char *s1);
+int		test_ftcalloc(size_t size_of, size_t len);
 void	eval_ftsplit(void);
 void	eval_ftstrtrim(void);
 void	eval_ftatoi(void);
@@ -63,5 +64,6 @@ void	eval_ftstrlen(void);
 void	eval_ftstrnstr(void);
 void	eval_ftstrncmp(void);
 void	eval_ftstrdup(void);
+void	eval_ftcalloc(void);
 void	eval_test(char *f_name, int ret_test);
 #endif
