@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 11:48:20 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 12:04:38 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ int		main(int argc, char **argv)
 		/* ft_isascii */
 		eval_ftisascii();
 		/* ft_isprint */
+		eval_ftisprint();
 
 		/* ft_strlen */
 		if (ft_strlen("Alleluiah!") != strlen("Alleluiah!"))
