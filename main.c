@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 15:10:06 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 15:41:42 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,8 @@ int		main(int argc, char **argv)
 		/* ft_isprint */
 		eval_ftisprint();
 		/* ft_strlen */
-		if (ft_strlen("Alleluiah!") != strlen("Alleluiah!"))
+		eval_ftstrlen();
+		/*if (ft_strlen("Alleluiah!") != strlen("Alleluiah!"))
 		{
 			printf("FAILED: ft_strlen\n");
 			printf("ft_strlen: \t%ld\n", ft_strlen("Alleluiah!"));
@@ -81,7 +82,7 @@ int		main(int argc, char **argv)
 		else
 		{
 			printf("SUCCESS: ft_strlen\n");
-		}
+		}*/
 	}
 	/* ft_strncmp Be careful this var is still used by memcmp test*/
 	eval_ftstrncmp();

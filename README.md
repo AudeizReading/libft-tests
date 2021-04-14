@@ -35,6 +35,7 @@ tests
 	* ft_isprint 
 	* ft_tolower
 	* ft_toupper
+	* ft_strlen
 	* ft_atoi
 	* ft_strnstr
 	* ft_strncmp
