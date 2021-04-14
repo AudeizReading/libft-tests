@@ -36,6 +36,7 @@ tests
 	* ft_tolower
 	* ft_toupper
 	* ft_memset
+	* ft_bzero
 	* ft_strlen
 	* ft_atoi
 	* ft_strnstr
