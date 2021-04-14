@@ -1,0 +1,59 @@
+Already up to date.
+[33mIf all your tests are OK and the moulinette KO you, please send an email with make sendfunction ex: make sendsubstr
+[36mmake -C /Users/alellouc/libft
+make[1]: Nothing to be done for `all'.
+[34m[Mandatory]
+[37mft_memset	: [32m1.OK [32m2.OK 
+[37mft_bzero	: [32m1.OK [32m2.OK [32m3.OK 
+[37mft_memcpy	: [32m1.OK [32m2.OK 
+[37mft_memccpy	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK 
+[37mft_memmove	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_memchr	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK 
+[37mft_memcmp	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK 
+[37mft_strlen	: [32m1.OK [32m2.OK 
+[37mft_isalpha	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK 
+[37mft_isdigit	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_isalnum	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.OK [32m12.OK 
+[37mft_isascii	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_isprint	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_toupper	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_tolower	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_strchr	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK 
+[37mft_strrchr	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK 
+[37mft_strncmp	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.OK [32m12.OK [32m13.OK [32m14.OK [32m15.OK [32m16.OK 
+[37mft_strlcpy	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK 
+[37mft_strlcat	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.OK [32m12.OK [32m13.OK [32m14.OK [32m15.OK [32m16.OK [32m17.OK 
+[37mft_strnstr	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.OK 
+[37mft_atoi		: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.OK [32m12.OK [32m13.OK [32m14.OK [32m15.OK [32m16.OK [32m17.OK 
+[37mft_calloc	: [32m1.OK [32m2.MOK 
+[37mft_strdup	: [32m1.OK [32m2.MOK [32m3.OK [32m4.MOK 
+[37mft_substr	: [32m1.OK [32m2.MOK [32m3.OK [32m4.MOK [32m5.OK [32m6.MOK [32m7.OK [32m8.MOK 
+[37mft_strjoin	: [32m1.OK [32m2.MOK [32m3.OK [32m4.MOK [32m5.OK [32m6.MOK [32m7.OK [32m8.MOK 
+[37mft_strtrim	: [32m1.OK [32m2.MOK [32m3.OK [32m4.MOK [32m5.OK [32m6.MOK [32m7.OK [32m8.MOK [32m9.OK [32m10.MOK [32m11.OK [32m12.MOK [32m13.OK [32m14.MOK 
+[37mft_split	: [32m1.MOK [32m2.OK [32m3.MOK [32m4.OK [32m5.MOK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [32m11.MOK [31m12.KO [32m13.OK [32m14.MOK [32m15.OK 
+[37mft_itoa		: [32m1.OK [32m2.MOK [32m3.OK [32m4.MOK [32m5.OK [32m6.MOK [32m7.OK [32m8.MOK 
+[37mft_strmapi	: [32m1.OK [32m2.MOK [32m3.OK [32m4.MOK 
+[37mft_putchar_fd	: [32m1.OK 
+[37mft_putstr_fd	: [32m1.OK 
+[37mft_putendl_fd	: [32m1.OK 
+[37mft_putnbr_fd	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK 
+[36mmake bonus -C /Users/alellouc/libft
+[1;32m
+gcc  -Wall -Wextra -Werror -c ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+[1;36m
+ar crs libft.a ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o
+[0m
+make cleanbonus
+[1;31m
+rm -rf ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o
+[0m
+[35m[Bonus]
+[37mft_lstnew	: [32m1.OK [32m2.OK [32m3.MOK 
+[37mft_lstadd_front	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK 
+[37mft_lstsize	: [32m1.OK [32m2.OK [32m3.OK 
+[37mft_lstlast	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_lstadd_back	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK 
+[37mft_lstdelone	: 
+[37mft_lstclear	: [32m1.OK 
+[37mft_lstiter	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK 
+[37mft_lstmap	: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK 
