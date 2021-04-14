@@ -1,7 +1,7 @@
 libft-test
 ==========
 
-This is apply to the new libft.
+This applies to the new libft.
 
 For using this program, you need this arborescence:
 
