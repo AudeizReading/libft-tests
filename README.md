@@ -13,7 +13,8 @@ For using this file, you need this arborescence:
  
 Like that, you don't need to change the path for including libft
 
-For using libft-test:
+### For using libft-test:
+
 Go into the libft-test directory and do:
 
  ```Makefile
