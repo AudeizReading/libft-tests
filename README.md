@@ -7,8 +7,8 @@ For using this file, you need this arborescence:
 
 ```shell
 .
-   | - libft
-   | - libft-test
+|- libft
+|- libft-test
 ```
  
 Like that, you don't need to change the path for including libft
@@ -27,7 +27,6 @@ That's all folks for the moment.
 
 tests
 -----
-
 	* ft_isalpha
 	* ft_isdigit
 	* ft_isalnum
