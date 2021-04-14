@@ -37,5 +37,6 @@ tests
 	* ft_toupper
 	* ft_atoi
 	* ft_strnstr
+	* ft_strncmp
 	* ft_strtrim
 	* ft_split

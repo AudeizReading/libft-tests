@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/14 13:15:10 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 14:12:54 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 14:54:39 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,5 @@ void	eval_ftstrnstr(void)
 		  && test_ftstrnstr(haystack7, haystack7, strlen(haystack7), haystack7)\
 		  && test_ftstrnstr(haystack8, needle8, 3, NULL)\
 		  && test_ftstrnstr(haystack9, needle9, strlen(haystack9), needle9);
-
 	eval_test("ft_strnstr", res);
 }

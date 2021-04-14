@@ -6,16 +6,10 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 14:14:08 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 15:10:06 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "../libft/libft.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <limits.h>
-#include <ctype.h>*/
 #include "test-libft.h"
 
 int		main(int argc, char **argv)
@@ -55,21 +49,16 @@ int		main(int argc, char **argv)
 		eval_ftisalpha();
 		/* ft_tolower */
 		eval_fttolower();
-
 		/* ft_toupper */
 		eval_fttoupper();
-
 		/* ft_isdigit */
 		eval_ftisdigit();
-
 		/* ft_isalnum */
 		eval_ftisalnum();
-		
 		/* ft_isascii */
 		eval_ftisascii();
 		/* ft_isprint */
 		eval_ftisprint();
-
 		/* ft_strlen */
 		if (ft_strlen("Alleluiah!") != strlen("Alleluiah!"))
 		{
@@ -94,7 +83,8 @@ int		main(int argc, char **argv)
 			printf("SUCCESS: ft_strlen\n");
 		}
 	}
-	/* ft_strncmp */
+	/* ft_strncmp Be careful this var is still used by memcmp test*/
+	eval_ftstrncmp();
 	char *s_ncmp1 = "the cake is a lie !\0I'm hidden lol\r\n";
 	char *s_ncmp2 = "there is no stars in the sky";
 	size_t size_ncmp1 = strlen("the cake is a lie !\0I'm hidden lol\r\n");
@@ -107,36 +97,6 @@ int		main(int argc, char **argv)
 	char *s_ncmp7 = "omg1";
 	char *s_ncmp8 = "omg3                ";
 	size_t size_ncmp4 = 100000;
-
-
-	if (ft_strncmp(s_ncmp1, s_ncmp2, size_ncmp1) != strncmp(s_ncmp1, s_ncmp2, size_ncmp1))
-	{
-		printf("FAILED: ft_strncmp\n");
-		printf("ft_strncmp: \t%d\n", ft_strncmp(s_ncmp1, s_ncmp2, size_ncmp1));
-		printf("strncmp: \t%d\n", strncmp(s_ncmp1, s_ncmp2, size_ncmp1));
-	}
-	else if (ft_strncmp(s_ncmp3, s_ncmp4, size_ncmp2) != strncmp(s_ncmp3, s_ncmp4, size_ncmp2))
-	{
-		printf("FAILED: ft_strncmp\n");
-		printf("ft_strncmp: \t%d\n", ft_strncmp(s_ncmp3, s_ncmp4, size_ncmp2));
-		printf("strncmp: \t%d\n", strncmp(s_ncmp3, s_ncmp4, size_ncmp2));
-	}
-	else if (ft_strncmp(s_ncmp5, s_ncmp6, size_ncmp3) != strncmp(s_ncmp5, s_ncmp6, size_ncmp3))
-	{
-		printf("FAILED: ft_strncmp\n");
-		printf("ft_strncmp: \t%d\n", ft_strncmp(s_ncmp5, s_ncmp6, size_ncmp3));
-		printf("strncmp: \t%d\n", strncmp(s_ncmp5, s_ncmp6, size_ncmp3));
-	}
-	else if (ft_strncmp(s_ncmp7, s_ncmp8, size_ncmp4) != strncmp(s_ncmp7, s_ncmp8, size_ncmp4))
-	{
-		printf("FAILED: ft_strncmp\n");
-		printf("ft_strncmp: \t%d\n", ft_strncmp(s_ncmp7, s_ncmp8, size_ncmp4));
-		printf("strncmp: \t%d\n", strncmp(s_ncmp7, s_ncmp8, size_ncmp4));
-	}
-	else
-	{
-		printf("SUCCESS: ft_strncmp\n");
-	}
 
 	/* ft_atoi */
 	eval_ftatoi();
