@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 15:41:42 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 17:30:14 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,28 +61,6 @@ int		main(int argc, char **argv)
 		eval_ftisprint();
 		/* ft_strlen */
 		eval_ftstrlen();
-		/*if (ft_strlen("Alleluiah!") != strlen("Alleluiah!"))
-		{
-			printf("FAILED: ft_strlen\n");
-			printf("ft_strlen: \t%ld\n", ft_strlen("Alleluiah!"));
-			printf("strlen: \t%ld\n", strlen("Alleluiah!"));
-		}
-		else if (ft_strlen("\0") != strlen("\0"))
-		{
-			printf("FAILED: ft_strlen\n");
-			printf("ft_strlen: \t%ld\n", ft_strlen("0"));
-			printf("strlen: \t%ld\n", strlen("0"));
-		}
-		else if (ft_strlen("abcdefghijklmnopqrstuvwxyz") !=	strlen("abcdefghijklmnopqrstuvwxyz"))
-		{
-			printf("FAILED: ft_strlen\n");
-			printf("ft_strlen: \t%ld\n", ft_strlen("abcdefghijklmnopqrstuvwxyz"));
-			printf("strlen: \t%ld\n", strlen("abcdefghijklmnopqrstuvwxyz"));
-		}
-		else
-		{
-			printf("SUCCESS: ft_strlen\n");
-		}*/
 	}
 	/* ft_strncmp Be careful this var is still used by memcmp test*/
 	eval_ftstrncmp();
@@ -103,23 +81,7 @@ int		main(int argc, char **argv)
 	eval_ftatoi();
 
 	/* ft_strdup */
-	char	*dest_ftstrdup;
-	char	*dest_strdup;
-	dest_ftstrdup = ft_strdup("World");
-	dest_strdup = strdup("World");
-	if (strcmp(dest_ftstrdup, dest_strdup) != 0)
-	{
-		printf("FAILED: ft_strdup\n");
-		printf("ft_strdup: \t%s\n", dest_ftstrdup);
-		printf("strdup: \t%s\n", dest_strdup);
-	}
-	else
-	{
-		printf("SUCCESS: ft_strdup\n");
-	}
-	free (dest_ftstrdup);
-	free (dest_strdup);
-
+	eval_ftstrdup();
 	/* ft_calloc */
 	char	*dest_ftcalloc;
 	char	*dest_calloc;
@@ -178,7 +140,7 @@ int		main(int argc, char **argv)
 	}
 	else
 	{
-		printf("FAILED: ft_memcpy\n");
+		printf("SUCCESS: ft_memcpy\n");
 	}
 	/*printf("ft_memcpy:\t\%s\n", ft_memcpy((void *)0, (void *)0, 17));*/
 /*	printf("memcpy:\t\%s\n", memcpy((void *)0, (void *)0, 17));*/
