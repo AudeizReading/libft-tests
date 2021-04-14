@@ -3,7 +3,7 @@ libft-test
 
 This is apply to the new libft.
 
-For using this file, you need this arborescence:
+For using this program, you need this arborescence:
 
 ```shell
 .
