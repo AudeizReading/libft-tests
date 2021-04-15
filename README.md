@@ -28,20 +28,22 @@ That's all folks for the moment.
 
 tests
 -----
+	* ft_memset
+	* ft_bzero
+	* ft_strlen
 	* ft_isalpha
 	* ft_isdigit
 	* ft_isalnum
 	* ft_isascii
 	* ft_isprint 
-	* ft_tolower
 	* ft_toupper
-	* ft_memset
-	* ft_bzero
-	* ft_strlen
-	* ft_atoi
-	* ft_strnstr
+	* ft_tolower
+	* ft_strchr
+	* ft_strrchr
 	* ft_strncmp
-	* ft_strdup
+	* ft_strnstr
+	* ft_atoi
 	* ft_calloc
+	* ft_strdup
 	* ft_strtrim
 	* ft_split

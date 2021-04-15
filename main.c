@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 20:12:35 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/15 09:49:06 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,8 @@ int		main(int argc, char **argv)
 	/* ft_bzero */
 	eval_ftbzero();
 	/* ft_memcpy */
+	/* seems these tests (ft_memcpy & ft_memcmp works on macOS, troubleshot only
+	** under WSL, maybe Debian too */
 	char	dest_ftmemcpy[250];
 	char	dest_memcpy[250];
 	char	*src_memcpy = "Hello World\0";
@@ -132,11 +134,10 @@ int		main(int argc, char **argv)
 	printf("ft_memcmp, \\200 et \\0:\t%d\n", ft_memcmp("\200", "\0", 1));
 	printf("memcmp, \\200 et \\0:\t%d\n", memcmp("\200", "\0", 1));
 
+	/* ft_strchr */
+	eval_ftstrchr();
 	/* ft_strrchr */
-	char	s_rchr1[] = "Hello";
-	printf("ft_strrchr:\t%s\tstrrchr:\t%s\n", ft_strrchr(s_rchr1, 'l'), strrchr(s_rchr1, 'l'));
-	printf("ft_strrchr:\t%s\tstrrchr:\t%s\n", ft_strrchr(s_rchr1, '\0'), strrchr(s_rchr1, '\0'));
-	 
+	eval_ftstrrchr();
 	/* ft_strnstr */
 	eval_ftstrnstr();
 

@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/10 18:45:32 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 18:35:16 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/15 09:18:42 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ int		test_ftstrdup(char *s1);
 int		test_ftcalloc(size_t size_of, size_t len);
 int		test_ftmemset(void *b1, void *b2, int c, size_t len);
 int		test_ftbzero(void *b1, void *b2, size_t len);
+int		test_ftstrchr(char *s, int c);
+int		test_ftstrrchr(char *s, int c);
 void	eval_ftsplit(void);
 void	eval_ftstrtrim(void);
 void	eval_ftatoi(void);
@@ -69,5 +71,7 @@ void	eval_ftstrdup(void);
 void	eval_ftcalloc(void);
 void	eval_ftmemset(void);
 void	eval_ftbzero(void);
+void	eval_ftstrchr(void);
+void	eval_ftstrrchr(void);
 void	eval_test(char *f_name, int ret_test);
 #endif
