@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 18:44:50 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/14 20:12:35 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -154,7 +154,7 @@ int		main(int argc, char **argv)
 	/* ft_substr */
 	printf("ft_substr: %s\n", ft_substr("tripouille", 0, 42000));
 	printf("ft_substr: %s\n", ft_substr("forty-two", 0, 0));
-	printf("ft_substr: %s\n", ft_substr("forty-two", 5, 0));
+	printf("ft_substr: %s\n", ft_substr("forty-two", 5, 7));
 	printf("ft_substr: %s\n", ft_substr("forty-two", -1, 20));
 	printf("ft_substr: %s\n", ft_substr(NULL, 0, 20));
 	printf("ft_substr: %s\n", ft_substr("tripouille", 1, 1));
