@@ -30,6 +30,7 @@ tests
 -----
 	* ft_memset
 	* ft_bzero
+	* ft_memchr
 	* ft_strlen
 	* ft_isalpha
 	* ft_isdigit

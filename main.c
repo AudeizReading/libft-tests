@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/15 09:49:06 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/15 10:06:15 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,6 +134,8 @@ int		main(int argc, char **argv)
 	printf("ft_memcmp, \\200 et \\0:\t%d\n", ft_memcmp("\200", "\0", 1));
 	printf("memcmp, \\200 et \\0:\t%d\n", memcmp("\200", "\0", 1));
 
+	/* ft_memchr */
+	eval_ftmemchr();
 	/* ft_strchr */
 	eval_ftstrchr();
 	/* ft_strrchr */
