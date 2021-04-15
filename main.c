@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/15 10:06:15 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/15 11:25:14 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,8 @@ int		main(int argc, char **argv)
 	/* ft_memcpy */
 	/* seems these tests (ft_memcpy & ft_memcmp works on macOS, troubleshot only
 	** under WSL, maybe Debian too */
-	char	dest_ftmemcpy[250];
+	eval_ftmemcpy();
+/*	char	dest_ftmemcpy[250];
 	char	dest_memcpy[250];
 	char	*src_memcpy = "Hello World\0";
 	ft_memcpy(dest_ftmemcpy, src_memcpy, strlen(src_memcpy) - 3);
@@ -108,7 +109,7 @@ int		main(int argc, char **argv)
 	else
 	{
 		printf("SUCCESS: ft_memcpy\n");
-	}
+	}*/
 	/*printf("ft_memcpy:\t\%s\n", ft_memcpy((void *)0, (void *)0, 17));*/
 /*	printf("memcpy:\t\%s\n", memcpy((void *)0, (void *)0, 17));*/
 	/*printf("ft_memcpy:\t\%s\n", ft_memcpy((void *)0, "segfaulter tu dois", 17));*/
@@ -166,7 +167,6 @@ int		main(int argc, char **argv)
 
 	/* ft_strtrim */
 	eval_ftstrtrim();
-
 	/* ft_split */
 	eval_ftsplit();
 	return (0);
