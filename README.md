@@ -31,6 +31,7 @@ tests
 	* ft_memset
 	* ft_bzero
 	* ft_memcpy
+	* ft_memcmp
 	* ft_memchr
 	* ft_strlen
 	* ft_isalpha

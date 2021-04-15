@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/15 13:08:15 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/15 14:03:22 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,21 +62,7 @@ int		main(int argc, char **argv)
 		/* ft_strlen */
 		eval_ftstrlen();
 	}
-	/* ft_strncmp Be careful this var is still used by memcmp test*/
 	eval_ftstrncmp();
-	char *s_ncmp1 = "the cake is a lie !\0I'm hidden lol\r\n";
-	char *s_ncmp2 = "there is no stars in the sky";
-	size_t size_ncmp1 = strlen("the cake is a lie !\0I'm hidden lol\r\n");
-	char *s_ncmp3 = "omg1||||||||||||||||";
-	char *s_ncmp4 = "omg3";
-	size_t size_ncmp2 = 4;
-	char *s_ncmp5 = "";
-	char *s_ncmp6 = "AAAAAA";
-	size_t size_ncmp3 = 6;
-	char *s_ncmp7 = "omg1";
-	char *s_ncmp8 = "omg3                ";
-	size_t size_ncmp4 = 100000;
-
 	/* ft_atoi */
 	eval_ftatoi();
 	/* ft_strdup */
@@ -90,25 +76,7 @@ int		main(int argc, char **argv)
 	/* ft_memcpy */
 	eval_ftmemcpy();
 	/* ft_memcmp */
-	char	s1[] = "Salua";
-	char	s2[] = "Saluz";
-	printf("ft_memcmp, s1 et s2:\t%d\n", ft_memcmp(s1, s2, strlen(s1)));
-	printf("memcmp, s1 et s2:\t%d\n", memcmp(s1, s2, strlen(s1)));
-	printf("ft_memcmp, s2 et s1:\t%d\n", ft_memcmp(s2, s1, strlen(s2)));
-	printf("memcmp, s2 et s1:\t%d\n", memcmp(s2, s1, strlen(s2)));
-	printf("ft_memcmp, s1 et s1:\t%d\n", ft_memcmp(s1, s1, strlen(s1)));
-	printf("memcmp, s1 et s1:\t%d\n", memcmp(s1, s1, strlen(s1)));
-	printf("ft_memcmp, s_ncmp1 et s_ncmp2:\t%d\n", ft_memcmp(s_ncmp1, s_ncmp2, size_ncmp1));
-	printf("memcmp, s_ncmp1 et s_ncmp2:\t%d\n", memcmp(s_ncmp1, s_ncmp2, size_ncmp1));
-	printf("ft_memcmp, s_ncmp3 et s_ncmp4:\t%d\n", ft_memcmp(s_ncmp3, s_ncmp4, size_ncmp2));
-	printf("memcmp, s_ncmp3 et s_ncmp4:\t%d\n", memcmp(s_ncmp3, s_ncmp4, size_ncmp2));
-	printf("ft_memcmp, s_ncmp5 et s_ncmp6:\t%d\n", ft_memcmp(s_ncmp5, s_ncmp6, size_ncmp3));
-	printf("memcmp, s_ncmp5 et s_ncmp6:\t%d\n", memcmp(s_ncmp5, s_ncmp6, size_ncmp3));
-	printf("ft_memcmp, s_ncmp7 et s_ncmp8:\t%d\n", ft_memcmp(s_ncmp7, s_ncmp8, size_ncmp4));
-	printf("memcmp, s_ncmp7 et s_ncmp8:\t%d\n", memcmp(s_ncmp7, s_ncmp8, size_ncmp4));
-	printf("ft_memcmp, \\200 et \\0:\t%d\n", ft_memcmp("\200", "\0", 1));
-	printf("memcmp, \\200 et \\0:\t%d\n", memcmp("\200", "\0", 1));
-
+	eval_ftmemcmp();
 	/* ft_memchr */
 	eval_ftmemchr();
 	/* ft_strchr */
