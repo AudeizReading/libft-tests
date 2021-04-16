@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/15 11:04:37 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/15 13:09:16 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/16 19:29:55 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		test_ftmemcpy(void *dest, void *src, size_t n)
 **	printf("dest:\t%s\tsize:%ld\n", (char *)dest, strlen(dest));
 	printf("dest_cpy:\t%s\tsize:%ld\n", dest_cpy, strlen(dest_cpy));*/
 
-	if ((mem == NULL && ft_mem == NULL) || !strncmp(mem, ft_mem, n))
+	if ((mem == NULL && ft_mem == NULL) || !memcmp(mem, ft_mem, n))
 		return (1);
 	return (0);
 }

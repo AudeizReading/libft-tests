@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/15 18:58:49 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/16 19:35:40 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,24 +75,14 @@ int		main(int argc, char **argv)
 	eval_ftbzero();
 	/* ft_memcpy */
 	eval_ftmemcpy();
+	/* ft_memccpy */
+	eval_ftmemccpy();
 	/* ft_memcmp */
 	eval_ftmemcmp();
 	/* ft_memchr */
 	eval_ftmemchr();
 	/* ft_memove */
 	eval_ftmemmove();
-/*	char	dst1[] = "HellO";
-	char	dst_ft[] = "Hello";
-	char	src[] = "Beautiful people";*/
-/*	printf("ft_memmove:\t%s\n", (char *)ft_memmove(dst_ft, src, 5));
-	printf("ft_memmove:\t%s\n", (char *)ft_memmove(src, dst_ft, 5));*/
-/*	printf("ft_memmove:\t%s\n", (char *)ft_memmove(dst_ft, src, 3));*/
-/*	printf("ft_memmove:\tdst: %s\tsrc: %s\n", dst_ft, src);
-	printf("ft_memmove:\t%s\n", (char *)ft_memmove(dst_ft, src, 3));
-	printf("ft_memmove:\tdst: %s\tsrc: %s\n", dst_ft, src);
-	printf("memmove:\tdst: %s\tsrc: %s\n", dst1, src);
-	printf("memmove:\t%s\n", (char *)ft_memmove(dst1, src, 3));
-	printf("memmove:\tdst: %s\tsrc: %s\n", dst1, src);*/
 	/* ft_strchr */
 	eval_ftstrchr();
 	/* ft_strrchr */
