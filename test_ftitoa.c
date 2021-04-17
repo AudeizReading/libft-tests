@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/17 13:44:48 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/17 18:16:20 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/17 18:17:58 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 int		test_ftitoa(int n, char *expected)
 {
-/*	char	*itoa = ft_itoa(n);
-
-	if (!strcmp(expected, itoa))
-		return (1);*/
 	/* Need to detect heapleaks */
 	int result = 0;
 	char	*ret = ft_itoa(n);
@@ -37,5 +33,4 @@ int		test_ftitoa(int n, char *expected)
 	** erreur */
 	free(ret);
 	return (result);
-/*	return (0);*/
 }
