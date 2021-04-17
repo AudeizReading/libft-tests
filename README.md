@@ -31,6 +31,7 @@ tests
 	* ft_memset
 	* ft_bzero
 	* ft_memcpy
+	* ft_memccpy
 	* ft_memcmp
 	* ft_memmove *(but should be improved IMPOV)*
 	* ft_memchr

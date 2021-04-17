@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/10 18:45:32 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/16 19:35:18 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/17 13:40:39 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ int		test_ftmemcpy(void *dest, void *src, size_t n);
 int		test_ftmemccpy(void *dest, void *src, int c, size_t n);
 int		test_ftmemcmp(void *dest, void *src, size_t n);
 int		test_ftmemmove(void *dest, void *dest_ft, void *src, size_t n);
+int		test_ftitoa(int n);
 void	eval_ftsplit(void);
 void	eval_ftstrtrim(void);
 void	eval_ftatoi(void);
@@ -83,5 +84,6 @@ void	eval_ftmemcpy(void);
 void	eval_ftmemcmp(void);
 void	eval_ftmemccpy(void);
 void	eval_ftmemmove(void);
+void	eval_ftitoa(void);
 void	eval_test(char *f_name, int ret_test);
 #endif
