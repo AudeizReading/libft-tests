@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/17 15:37:31 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/17 17:55:42 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,24 +91,7 @@ int		main(int argc, char **argv)
 	/* ft_strnstr */
 	eval_ftstrnstr();
 	/* ft_strlcpy */
-	char	*src = "HELLO";
-	char	dest[] = "AAAAAAAAAA";
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, src, 0), dest);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, src, 1), dest);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, src, 2), dest);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, src, -1), dest);
-	memset(dest, 'A', 10);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, src, 6), dest);
-	memset(dest, 'A', 10);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, src, 7), dest);
-	memset(dest, 'A', 10);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, src, 8), dest);
-	memset(dest, 'A', 10);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, "", 42), dest);
-	memset(dest, 0, 10);
-	printf("return of ft_strlcpy: %ld\ndest: %s\n", ft_strlcpy(dest, "1", 0), dest);
-	memset(dest, 'A', 10);
-
+	eval_ftstrlcpy();
 	/* ft_itoa */
 	eval_ftitoa();
 
