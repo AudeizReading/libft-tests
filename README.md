@@ -52,3 +52,4 @@ tests
 	* ft_strdup
 	* ft_strtrim
 	* ft_split
+	* ft_itoa
