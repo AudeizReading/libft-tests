@@ -52,4 +52,4 @@ tests
 	* ft_strdup
 	* ft_strtrim
 	* ft_split
-	* ft_itoa
+	* ft_itoa *(should be improved about memory leaks)*
