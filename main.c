@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/17 18:39:36 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/17 20:57:31 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ int		main(int argc, char **argv)
 	eval_ftstrnstr();
 	/* ft_strlcpy */
 	eval_ftstrlcpy();
+	/* ft_strlcat */
+	eval_ftstrlcat();
 	/* ft_itoa */
 	eval_ftitoa();
 	/* ft_substr */

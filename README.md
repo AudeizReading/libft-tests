@@ -47,6 +47,7 @@ tests
 	* ft_strrchr
 	* ft_strncmp
 	* ft_strlcpy
+	* ft_strlcat
 	* ft_strnstr
 	* ft_atoi
 	* ft_calloc
