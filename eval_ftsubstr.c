@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   eval_test.c                                        :+:      :+:    :+:   */
+/*   eval_ftsubstr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/12 10:15:58 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/17 18:38:12 by alellouc         ###   ########.fr       */
+/*   Created: 2021/04/17 18:20:52 by alellouc          #+#    #+#             */
+/*   Updated: 2021/04/17 18:36:27 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test-libft.h"
 
-void	eval_test(char *f_name, int ret_test)
+void	eval_ftsubstr(void)
 {
-	printf("%s : ", f_name);
-	if (ret_test)
-		printf("%s\t\t\t\t%s[SUCCESS]%s\n", BOLD, GREEN, FANCY_RESET);
-	else
-		printf("%s\t\t\t\t%s[FAIL]%s\n", BOLD, RED, FANCY_RESET);
+	int	res;
+	char	*str = "forty-two";
+
+	res = test_ftsubstr(str, 0, 42000, str)\
+		  && test_ftsubstr(str, 0, 0, "")\
+		  && test_ftsubstr(str, 5, 7, str + 5)\
+		  && test_ftsubstr(str, -1, 20, "")\
+		  && test_ftsubstr(NULL, 0, 20, NULL)\
+		  && test_ftsubstr(str, 1, 1, "o")\
+		  && test_ftsubstr(str, 1000, 1, "")\
+		  && test_ftsubstr("1", 42, 4200000000, "")\
+		  ;
+	eval_test("ft_substr", res);
 }

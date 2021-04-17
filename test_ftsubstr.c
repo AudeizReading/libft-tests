@@ -1,22 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   eval_test.c                                        :+:      :+:    :+:   */
+/*   test_ftstrsubstr.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/12 10:15:58 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/17 18:38:12 by alellouc         ###   ########.fr       */
+/*   Created: 2021/04/17 18:09:29 by alellouc          #+#    #+#             */
+/*   Updated: 2021/04/17 18:13:38 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test-libft.h"
 
-void	eval_test(char *f_name, int ret_test)
+int		test_ftsubstr(char *str, unsigned int start, size_t len, char *expected)
 {
-	printf("%s : ", f_name);
-	if (ret_test)
-		printf("%s\t\t\t\t%s[SUCCESS]%s\n", BOLD, GREEN, FANCY_RESET);
-	else
-		printf("%s\t\t\t\t%s[FAIL]%s\n", BOLD, RED, FANCY_RESET);
+	int result = 0;
+	char	*ret = ft_substr(str, start, len);
+
+	if (ret && expected)
+	{
+		if (!strcmp(ret, expected))
+		{
+			result = 1;
+		}
+	}
+	else if (ret == expected)
+	{
+					result = 1;
+	}
+	/* Si ca segfault, il est possible que ret ne soit pas malloc -> c'est une
+	** erreur */
+	free(ret);
+	return (result);
 }

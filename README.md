@@ -51,6 +51,7 @@ tests
 	* ft_atoi
 	* ft_calloc
 	* ft_strdup
+	* ft_substr
 	* ft_strtrim
 	* ft_split
 	* ft_itoa *(should be improved about memory leaks)*
