@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   eval_test.c                                        :+:      :+:    :+:   */
+/*   eval_ftputcharfd.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/12 10:15:58 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/18 15:41:48 by alellouc         ###   ########.fr       */
+/*   Created: 2021/04/18 14:48:33 by alellouc          #+#    #+#             */
+/*   Updated: 2021/04/18 15:37:05 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test-libft.h"
 
-void	eval_test(char *f_name, int ret_test)
+void	eval_ftputcharfd(void)
 {
-	printf("%s : ", f_name);
-	if (ret_test)
-		printf("%s\t\t\t\t%s[SUCCESS]%s\n", BOLD, GREEN, FANCY_RESET);
-	else
-		printf("%s\t\t\t\t%s[FAIL]%s\n", BOLD, RED, FANCY_RESET);
+	int		res;
+
+	res = test_ftputcharfd('C') && test_ftputcharfd('\n')\
+		  && test_ftputcharfd(0) && test_ftputcharfd('i')\
+		  && test_ftputcharfd(32) && test_ftputcharfd(65)\
+		  ;
+	eval_test("ft_putchar_fd", res);
 }
