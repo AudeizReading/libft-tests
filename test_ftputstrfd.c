@@ -6,12 +6,12 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/18 15:44:16 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/18 16:34:56 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/18 16:55:34 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test-libft.h"
-static char	*ft_getstr_fd(char *s, size_t len, int fd)
+/*static char	*ft_getstr_fd(char *s, size_t len, int fd)
 {
 	int		c;
 	char	*p_s = s;
@@ -19,9 +19,9 @@ static char	*ft_getstr_fd(char *s, size_t len, int fd)
 	while (--len > 0 && (c = ft_getchar_fd(fd)) != EOF)
 		if ((*p_s++ = c) == '\0')
 			break;
-/*	*p_s = 0;*/
+	*p_s = 0;
 	return ((c == EOF && p_s == s) ? NULL : s);
-}
+}*/
 
 int		test_ftputstrfd(char *s)
 {

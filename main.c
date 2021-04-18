@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/18 14:55:58 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/18 16:01:10 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,5 +106,7 @@ int		main(int argc, char **argv)
 	eval_ftsplit();
 	/* ft_putchar_fd */
 	eval_ftputcharfd();
+	/* ft_putstr_fd */
+	eval_ftputstrfd();
 	return (0);
 }

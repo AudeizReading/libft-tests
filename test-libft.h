@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/10 18:45:32 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/18 15:38:05 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/18 16:53:20 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,10 +69,11 @@ int		test_ftstrlcat(char *dst, char *src, size_t size, char *expected);
 int		test_ftstrjoin(char *s1, char *s2, char *expected);
 int		test_ftstrmapi(char *s, char (*f)(unsigned int, char), char *expected);
 int		test_ftputcharfd(char c);
-int		test_ftputstrfd(char *s, int fd);
+int		test_ftputstrfd(char *s);
 int		test_ftputendlfd(char *s, int fd);
 int		test_ftputnbrfd(int n, int fd);
 int		ft_getchar_fd(int fd);
+char	*ft_getstr_fd(char *s, size_t len, int fd);
 void	eval_ftsplit(void);
 void	eval_ftstrtrim(void);
 void	eval_ftatoi(void);

@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   eval_ftputcharfd.c                                 :+:      :+:    :+:   */
+/*   ft_getstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/18 14:48:33 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/18 16:46:19 by alellouc         ###   ########.fr       */
+/*   Created: 2021/04/18 16:52:29 by alellouc          #+#    #+#             */
+/*   Updated: 2021/04/18 16:52:56 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test-libft.h"
 
-void	eval_ftputcharfd(void)
+char	*ft_getstr_fd(char *s, size_t len, int fd)
 {
-	int		res;
+	int		c;
+	char	*p_s = s;
 
-	res = test_ftputcharfd('C') && test_ftputcharfd('\n')\
-		  && test_ftputcharfd(0) && test_ftputcharfd('i')\
-		  && test_ftputcharfd(32) && test_ftputcharfd(65)\
-		  ;
-	eval_test("ft_putcharfd", res);
+	while (--len > 0 && (c = ft_getchar_fd(fd)) != EOF)
+		if ((*p_s++ = c) == '\0')
+			break;
+/*	*p_s = 0;*/
+	return ((c == EOF && p_s == s) ? NULL : s);
 }
+
