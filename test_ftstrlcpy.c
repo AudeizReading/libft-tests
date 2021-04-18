@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/17 15:42:04 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/17 17:55:29 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/18 21:29:22 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int		test_ftstrlcpy(char *dst, char *src, size_t size, char *expected)
 	c = (!strcmp(src, "1")) ? 0 : 'A';
 	memset(dst, c, 10);
 	res = ft_strlcpy(dst, src, size);
-	if (res == strlen(src) && !strcmp(dst, expected))
+	if (res == strlen(src) && !strncmp(dst, expected, size))
 		return (1);
 	return (0);
 }
