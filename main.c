@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:57:14 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/17 20:57:31 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/18 11:38:00 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,8 @@ int		main(int argc, char **argv)
 	eval_ftitoa();
 	/* ft_substr */
 	eval_ftsubstr();
+	/* ft_strjoin */
+	eval_ftstrjoin();
 	/* ft_strtrim */
 	eval_ftstrtrim();
 	/* ft_split */

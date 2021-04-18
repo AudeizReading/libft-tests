@@ -5,7 +5,7 @@ This applies to the new libft.
 
 For using this program, you need this arborescence:
 
-```shell
+```
 .
 |- libft
 |- libft-test
@@ -53,6 +53,7 @@ tests
 	* ft_calloc
 	* ft_strdup
 	* ft_substr
+	* ft_strjoin
 	* ft_strtrim
 	* ft_split
 	* ft_itoa *(should be improved about memory leaks)*
