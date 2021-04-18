@@ -6,7 +6,7 @@
 #    By: alellouc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/03 20:33:29 by alellouc          #+#    #+#              #
-#    Updated: 2021/04/10 19:15:20 by alellouc         ###   ########.fr        #
+#    Updated: 2021/04/18 18:46:44 by alellouc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ lib:
 
 test: all
 	$(MAKE) clean
-	./$(NAME) lalali
+	./$(NAME) 
 
 %.o: &.c
 	$(CC) -c $< $(ALL_FLAGS) -o $@

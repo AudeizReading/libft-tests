@@ -24,7 +24,8 @@ It will compile the libft *(not bonus yet)* and launch the executable that testi
 your libft, but you have to respect the mentionned arborescence.
 
 That's all folks for the moment.
-*Pay attention, because this test is incomplete, I will update it gradually*
+*Pay attention, because this test is incomplete, I will update it gradually.
+	- 21/04/18: Only missing the bonus part and need to improve the malloc functions testing*
 
 tests
 -----
@@ -50,10 +51,15 @@ tests
 	* ft_strlcat
 	* ft_strnstr
 	* ft_atoi
-	* ft_calloc
-	* ft_strdup
-	* ft_substr
-	* ft_strjoin
-	* ft_strtrim
-	* ft_split
+	* ft_calloc *(should be improved about memory leaks)*
+	* ft_strdup *(should be improved about memory leaks)*
+	* ft_substr *(should be improved about memory leaks)*
+	* ft_strjoin *(should be improved about memory leaks)*
+	* ft_strtrim *(should be improved about memory leaks)*
+	* ft_split *(should be improved about memory leaks)*
 	* ft_itoa *(should be improved about memory leaks)*
+	* ft_putchar_fd
+	* ft_putstr_fd
+	* ft_putendl_fd
+	* ft_putnbr_fd
+
