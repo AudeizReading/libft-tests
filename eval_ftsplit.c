@@ -6,7 +6,7 @@
 /*   By: alellouc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 10:22:10 by alellouc          #+#    #+#             */
-/*   Updated: 2021/04/14 11:47:46 by alellouc         ###   ########.fr       */
+/*   Updated: 2021/04/19 11:23:15 by alellouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	eval_ftsplit(void)
 	int ret;
 
 	ret = test_ftsplit("$$$$$$hello$$$$how$do$$$$$you$$$$do$$$$$in$$$$$forty$$$$$$$two",'$')\
+		&& test_ftsplit("       tripouille   42   ", ' ')\
+		&& test_ftsplit("chinimala", ' ')\
 		&& test_ftsplit("forty-two\0I'm hidden", '-')\
 		&& test_ftsplit("forty-two\0I'm hidden", ' ')\
 		&& test_ftsplit("forty-two", 0)\
