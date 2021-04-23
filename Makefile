@@ -6,7 +6,7 @@
 #    By: alellouc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/03 20:33:29 by alellouc          #+#    #+#              #
-#    Updated: 2021/04/18 19:26:52 by alellouc         ###   ########.fr        #
+#    Updated: 2021/04/22 19:56:11 by alellouc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,10 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@$(MAKE) lib
 	@$(CC) $^ $(LDFLAGS) -o $@; chmod +x $@
+
+debug: $(OBJ)
+	@$(MAKE) lib
+	@$(CC) $^ $(LDFLAGS) -fsanitize=address -fno-omit-frame-pointer -g -o $@; chmod +x $@
 
 lib:
 	@$(MAKE) -C $(LIBFT_PATH) all
